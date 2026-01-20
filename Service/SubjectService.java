@@ -14,7 +14,7 @@ public class SubjectService {
         this.subjectRepository = subjectRepository;
     }
 
-    public List<Subject> getSubjectsBySemester(int semester) {
-        return subjectRepository.findBySemester(semester);
+    public List<Subject> getSubjectsBySubjectCode(String subjectCode) {
+        return subjectRepository.findBySubjectCode(subjectCode);
     }
 }

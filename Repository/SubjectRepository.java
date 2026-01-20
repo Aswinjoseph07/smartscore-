@@ -6,6 +6,6 @@ import java.util.List;
 
 
 
-public interface SubjectRepository extends JpaRepository<Subject, Integer> {
-    List<Subject> findBySemester(int semester);
+public interface SubjectRepository extends JpaRepository<Subject,Long> {
+    List<Subject> findBySubjectCode(String subjectCode);
 }
